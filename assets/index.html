@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="root">
+        <!-- Header will go here -->
+        <header class="header">
+            <div class="container header-content">
+                <div class="logo-location">
+                    <a href="#" class="logo">
+                        <svg class="_1T-E4" viewBox="0 0 559 825" height="49" width="34" fill="#fc8019">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M542.92 234.028C557.669 253.208 559.278 280.603 543.684 300.732L297.643 618.351C288.583 630.05 270.417 630.05 261.357 618.351L15.3163 300.732C-0.277803 280.603 1.33088 253.208 16.0803 234.028L158.07 49.4419C168.271 36.1804 186.273 31.0664 201.166 37.0278L268.046 63.7992C275.337 66.7176 283.663 66.7176 290.954 63.7992L357.834 37.0278C372.727 31.0664 390.729 36.1804 400.93 49.4419L542.92 234.028ZM483.921 520.187L434.618 583.834L400.315 557.266L449.619 493.618C459.721 480.575 457.433 461.714 444.389 451.611C431.346 441.509 412.486 443.797 402.383 456.84L322.217 560.331C308.203 578.423 282.859 581.188 265.414 566.526L61.034 394.808C50.1555 385.669 33.9213 387.072 24.7818 397.951C15.6423 408.829 17.0451 425.063 27.9236 434.203L214.288 590.767C246.398 617.747 293.181 614.619 321.436 584.502L428.053 470.835L462.356 497.402L355.739 611.07C368.514 620.965 378.887 633.918 385.244 649.034C398.246 679.953 383.666 715.492 352.747 728.494C321.829 741.496 286.29 726.916 273.287 695.997C260.285 665.078 274.866 629.54 305.784 616.538C311.233 614.246 316.782 613.064 322.25 612.913L511.042 369.213L483.921 520.187Z">
+                            </path>
+                        </svg>
+                        <span class="logo-text">SWIGGY</span>
+                    </a>
+                    <div class="location-container">
+                        <span class="location-other">Other</span>
+                        <span class="location-city">Bangalore, Karnataka, India</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+                <nav class="nav-links">
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-percent"></i> Offers <span class="new-tag">NEW</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-solid fa-life-ring"></i> Help
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fa-regular fa-user"></i> Sign In
+                    </a>
+                    <a href="#" class="nav-item cart-item">
+                        <i class="fa-solid fa-cart-shopping"></i> Cart
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1>Hungry?</h1>
+                        <p class="hero-subtitle">Order food from favourite restaurants near you.</p>
+                        <div class="search-bar-container">
+                            <input type="text" placeholder="Search for restaurant, cuisine or a dish"
+                                class="hero-search-input">
+                            <button class="hero-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-ban" style="font-size: 24px; color: var(--text-color);"></i>
+                                <span>No Minimum Order</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-location-dot"
+                                    style="font-size: 24px; color: var(--text-color);"></i>
+                                <span>Live Order Tracking</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-bolt" style="font-size: 24px; color: var(--text-color);"></i>
+                                <span>Lightning Fast Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&auto=format&fit=crop&q=60"
+                            alt="Delicious Food">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mind Section (Categories) -->
+            <section class="mind-section container">
+                <div class="section-header">
+                    <h2>What's on your mind?</h2>
+                    <div class="carousel-nav">
+                        <button class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="nav-btn next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="scrolling-wrapper mind-carousel" id="mindCarousel">
+                    <!-- Carousel items will be injected by JS -->
+                </div>
+            </section>
+
+            <!-- Top Restaurant Chains -->
+            <section class="top-chains-section container">
+                <div class="section-header">
+                    <h2>Top restaurant chains in Bangalore</h2>
+                    <div class="carousel-nav">
+                        <button class="nav-btn prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="nav-btn next-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="scrolling-wrapper chains-carousel" id="chainsCarousel">
+                    <!-- Carousel items will be injected by JS -->
+                </div>
+            </section>
+
+
+            <!-- Restaurant Listing -->
+            <section class="restaurant-listing container">
+                <h2>Restaurants with online food delivery in Bangalore</h2>
+                <div class="filters-bar">
+                    <button class="filter-btn active">Filter</button>
+                    <button class="filter-btn">Sort By</button>
+                    <button class="filter-btn">Fast Delivery</button>
+                    <button class="filter-btn">New on Swiggy</button>
+                    <button class="filter-btn">Ratings 4.0+</button>
+                    <button class="filter-btn">Pure Veg</button>
+                    <button class="filter-btn">Offers</button>
+                    <button class="filter-btn">Rs. 300-Rs. 600</button>
+                    <button class="filter-btn">Less than Rs. 300</button>
+                </div>
+                <div class="restaurant-grid" id="restaurantGrid">
+                    <!-- Restaurant cards will be injected by JS -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-col">
+                    <h3>Swiggy</h3>
+                    <p>© 2026 Bundl Technologies Pvt. Ltd</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Team</a>
+                    <a href="#">Swiggy One</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact us</h3>
+                    <a href="#">Help & Support</a>
+                    <a href="#">Partner with us</a>
+                    <a href="#">Ride with us</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
